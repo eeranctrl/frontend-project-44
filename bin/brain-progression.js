@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 import main from '../src/index.js'
+import randomInt from '../src/random.js'
 const GAME_DESCRIPTION = 'What number is missing in the progression?'
-
-const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const roundData = () => {
   const start = randomInt(1, 20)

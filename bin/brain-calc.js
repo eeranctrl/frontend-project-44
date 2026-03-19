@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // import askQuestion from '../src/cli.js'
 import main from '../src/index.js'
+import randomInt from '../src/random.js'
 
 const GAME_DESCRIPTION = 'What is the result of the expression?'
 
@@ -13,8 +14,8 @@ let calculate = (a, b, operator) => {
 }
 
 const roundData = () => {
-  let a = Math.floor(Math.random() * 25) + 1
-  let b = Math.floor(Math.random() * 25) + 1
+  let a = randomInt(1, 25)
+  let b = randomInt(1, 25)
   let operators = ['+', '-', '*']
   let operator = operators[Math.floor(Math.random() * operators.length)]
 

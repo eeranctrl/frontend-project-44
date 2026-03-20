@@ -24,5 +24,5 @@ export default function main(description_game, roundData) {
     console.log('Correct!')
   }
 
-  console.log(`Congratulations, ${name}`)
+  console.log(`Congratulations, ${name}!`)
 }
